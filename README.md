@@ -1,20 +1,14 @@
-# node-red-contrib-email
+# node-red-contrib-email-ssl
 
 SMTP email node for Node-RED
 
-[![npm version](https://img.shields.io/npm/v/node-red-contrib-email.svg?style=flat-square)](https://www.npmjs.org/package/node-red-contrib-email)
-[![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=node-red-contrib-email&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=node-red-contrib-email)
-[![npm downloads](https://img.shields.io/npm/dm/node-red-contrib-email.svg?style=flat-square)](https://npm-stat.com/charts.html?package=node-red-contrib-email)
 
-![node-email-send](https://raw.githubusercontent.com/steineey/node-red-contrib-email/master/examples/node-email-send.png)
-
-## Installation 
 
 You can install by using the *Menu - Manage Palette* option, or running the following command in your Node-RED user directory - typically ~/.node-red
 
 ```sh
 cd ~/.node-red
-npm install --save node-red-contrib-email
+npm install --save node-red-contrib-email-ssl
 ```
 
 ## Requirements
