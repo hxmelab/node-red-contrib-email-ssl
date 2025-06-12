@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType("email-transport", {
+    RED.nodes.registerType("email-ssl-config", {
         category: "config",
         color: "#90CAF9",
         defaults: {
@@ -20,7 +20,7 @@
     });
 </script>
 
-<script type="text/html" data-template-name="email-transport">
+<script type="text/html" data-template-name="email-ssl-config">
     <div class="form-row">
         <label for="node-config-input-name">name</label>
         <input type="text" id="node-config-input-name" placeholder="name" />
@@ -65,7 +65,7 @@
     </div>
 </script>
 
-<script type="text/markdown" data-help-name="email-transport">
+<script type="text/markdown" data-help-name="email-ssl-config">
 ## SMTP Config
 
 -   **host** - is the hostname or ip address to connect to
@@ -76,11 +76,11 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType("email-send", {
+    RED.nodes.registerType("email-ssl-send", {
         category: "social",
         color: "#90CAF9",
         defaults: {
-            transport: { type: "email-transport" },
+            transport: { type: "email-ssl-config" },
             from: { value: "" },
             to: { value: "" },
             cc: { value: "" },
@@ -99,7 +99,7 @@
     });
 </script>
 
-<script type="text/html" data-template-name="email-send">
+<script type="text/html" data-template-name="email-ssl-send">
     <div class="form-row">
         <label for="node-input-transport">transport</label>
         <input type="text" id="node-input-transport" />
@@ -150,7 +150,7 @@
     </div>
 </script>
 
-<script type="text/markdown" data-help-name="email-send">
+<script type="text/markdown" data-help-name="email-ssl-send">
 ## Send Mail Node Input
 
 -   **from** - The email address of the sender. All email addresses can be plain ‘sender@server.com’ or formatted '“Sender Name” sender@server.com', see Address object for details. Can be overwritten with `msg.email.from`.

@@ -26,7 +26,7 @@ module.exports = function (RED) {
         });
     }
 
-    RED.nodes.registerType("email-transport", EmailTransport, {
+    RED.nodes.registerType("email-ssl-config", EmailTransport, {
         credentials: {
             user: { type: "text" },
             pass: { type: "password" },
@@ -150,5 +150,5 @@ module.exports = function (RED) {
         node.on("input", node.sendEmail);
     }
 
-    RED.nodes.registerType("email-send", EmailSend);
+    RED.nodes.registerType("email-ssl-send", EmailSend);
 };
