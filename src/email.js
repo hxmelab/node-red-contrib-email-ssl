@@ -8,6 +8,9 @@ module.exports = function (RED) {
             host: config.host,
             port: parseInt(config.port, 10),
             auth: { ...node.credentials },
+            tls: {
+                rejectUnauthorized: false
+            },
             secure: config.secure,
             proxy: config.proxy || undefined,
         });
