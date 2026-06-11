@@ -9,7 +9,7 @@ module.exports = function (RED) {
             port: parseInt(config.port, 10),
             auth: { ...node.credentials },
             tls: {
-                rejectUnauthorized: false
+                rejectUnauthorized: config.reject
             },
             secure: config.secure,
             proxy: config.proxy || undefined,
