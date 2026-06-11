@@ -16,7 +16,7 @@
   "bugs": "https://github.com/hxmelab/node-red-contrib-email-ssl/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hxmelab/node-red-contrib-email-ssl"
+    "url": "git+https://github.com/hxmelab/node-red-contrib-email-ssl.git"
   },
   "license": "MIT",
   "scripts": {},
